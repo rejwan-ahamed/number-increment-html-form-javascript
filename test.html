@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="number1">number</label>
+    <input type="number" id="nu1" onkeyup="mult(this.value);">
+    <br>
+    <br>
+    <label for="output">output</label>
+    <input type="number" id="output" readonly>
+</body>
+
+</html>
+
+<script>
+    function mult(value) {
+        var x
+        x = 0.246 * value;
+        document.getElementById('output').value = x;
+    }
+</script>
